@@ -53,7 +53,7 @@ class Request
             $_GET,
             $_POST,
             $_REQUEST,
-            getallheaders(),
+            get_http_headers($_SERVER),
             $_COOKIE,
             $_FILES,
             $_SERVER
@@ -87,6 +87,11 @@ class Request
     public function hasHeader(string $key): bool
     {
         return isset($this->headers[strtolower($key)]);
+    }
+
+    public function setHeader(string $key, string $value): void
+    {
+        $this->headers[strtolower($key)] = $value;
     }
 
     public function headers(): array

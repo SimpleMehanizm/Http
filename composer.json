@@ -17,15 +17,9 @@
         }
     ],
     "require": {
-        "simplemehanizm/array": "@dev"
+        "simplemehanizm/array": "^1.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^10.4"
-    },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "../Array"
-        }
-    ]
+    }
 }
