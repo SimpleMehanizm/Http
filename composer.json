@@ -6,7 +6,10 @@
     "autoload": {
         "psr-4": {
             "SimpleMehanizm\\Http\\": "src/"
-        }
+        },
+        "files": [
+            "./functions/get_http_headers.php"
+        ]
     },
     "authors": [
         {
